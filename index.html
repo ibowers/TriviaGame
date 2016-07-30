@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>90s Games' Titles Trivia</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="assets/javascript/app.js"></script>
+</head>
+<body>
+	<div class="container center_div" id="quizStart">
+		<div class="row">
+			<div class="col-xs-12">
+			<h1>90s Games' Titles Trivia</h1>
+			<a class="btn btn-default btn-lg" href="#" role="button">Start</a>
+			</div>
+		</div>
+	</div>
+	<div class="container center_div" id="quizForm">
+		<div class="row">
+		<div class="col-xs-12">
+			<div class="triviaTimer"></div>
+			<form name="trivia" method="post" name="buttons" id="triviaQA" obsubmit="return false">
+				<div class="question">Question 1</div>
+					<input type="radio" name="q1" value="wrong" class="answer"><span>Answer 1A</span></input>
+					<input type="radio" name="q1" value="wrong" class="answer"><span>Answer 1B</span></input>
+					<input type="radio" name="q1" value="wrong" class="answer"><span>Answer 1C</span></input>
+					<input type="radio" name="q1" value="correct" class="answer"><span>Answer 1D</span></input>
+					<input type="radio" name="q1" value="wrong" class="answer"><span>Answer 1E</span></input>
+				<span class="questionLineBreak"></span>
+				<div class="question">Question 2</div>
+					<input type="radio" name="q2" value="correct" class="answer"><span>Answer 2A</span></input>
+					<input type="radio" name="q2" value="wrong" class="answer"><span>Answer 2B</span></input>
+					<input type="radio" name="q2" value="wrong" class="answer"><span>Answer 2C</span></input>
+					<input type="radio" name="q2" value="wrong" class="answer"><span>Answer 2D</span></input>
+					<input type="radio" name="q2" value="wrong" class="answer"><span>Answer 2E</span></input>
+				<span class="questionLineBreak"></span>
+				<div class="question">Question 3</div>
+					<input type="radio" name="q3" value="wrong" class="answer"><span>Answer 3A</span></input>
+					<input type="radio" name="q3" value="wrong" class="answer"><span>Answer 3B</span></input>
+					<input type="radio" name="q3" value="correct" class="answer"><span>Answer 3C</span></input>
+					<input type="radio" name="q3" value="wrong" class="answer"><span>Answer 3D</span></input>
+					<input type="radio" name="q3" value="wrong" class="answer"><span>Answer 3E</span></input>
+				<span class="questionLineBreak"></span>
+				<div class="question">Question 4</div>
+					<input type="radio" name="q4" value="wrong" class="answer"><span>Answer 4A</span></input>
+					<input type="radio" name="q4" value="correct" class="answer"><span>Answer 4B</span></input>
+					<input type="radio" name="q4" value="wrong" class="answer"><span>Answer 4C</span></input>
+					<input type="radio" name="q4" value="wrong" class="answer"><span>Answer 4D</span></input>
+					<input type="radio" name="q4" value="wrong" class="answer"><span>Answer 4E</span></input>
+				<span class="questionLineBreak"></span>
+				<div class="question">Question 5</div>
+					<input type="radio" name="q5" value="wrong" class="answer"><span>Answer 5A</span></input>
+					<input type="radio" name="q5" value="correct" class="answer"><span>Answer 5B</span></input>
+					<input type="radio" name="q5" value="wrong" class="answer"><span>Answer 5C</span></input>
+					<input type="radio" name="q5" value="wrong" class="answer"><span>Answer 5D</span></input>
+					<input type="radio" name="q5" value="wrong" class="answer"><span>Answer 5E</span></input>
+				<span class="questionLineBreak"></span>
+				<div class="question">Question 6</div>
+					<input type="radio" name="q6" value="wrong" class="answer"><span>Answer 6A</span></input>
+					<input type="radio" name="q6" value="wrong" class="answer"><span>Answer 6B</span></input>
+					<input type="radio" name="q6" value="wrong" class="answer"><span>Answer 6C</span></input>
+					<input type="radio" name="q6" value="correct" class="answer"><span>Answer 6D</span></input>
+					<input type="radio" name="q6" value="wrong" class="answer"><span>Answer 6E</span></input>
+					<span class="questionLineBreak"></span>
+					<br>
+				<button class="submit btn btn-danger btn-lg" onclick="return resultsClick();"" type="submit">Finish</button>
+			</form>
+		</div>
+		</div>
+	</div>
+	<div class="container center_div" id="quizResults">
+		<div class="row">
+			<h1>Your Results</h1>
+			<div id="resultNumbers">
+				<div class="numCorrect"></div>
+				<div class="numWrong"></div>
+				<div class="numUnanswered"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
