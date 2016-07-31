@@ -13,60 +13,60 @@
 	<div class="container center_div" id="quizStart">
 		<div class="row">
 			<div class="col-xs-12">
-			<h1>90s Games' Titles Trivia</h1>
-			<a class="btn btn-default btn-lg" href="#" role="button">Start</a>
+			<h1 id="triviaTitle">90s Games' Titles Trivia</h1>
+			<a class="btn btn-default btn-lg" role="button" id="startButton">Start</a>
 			</div>
 		</div>
 	</div>
 	<div class="container center_div" id="quizForm">
 		<div class="row">
 		<div class="col-xs-12">
-			<div class="triviaTimer"></div>
+			<div id="triviaTimer">30</div>
 			<form name="trivia" method="post" name="buttons" id="triviaQA" obsubmit="return false">
-				<div class="question">Question 1</div>
-					<input type="radio" name="q1" value="wrong" class="answer"><span>Answer 1A</span></input>
-					<input type="radio" name="q1" value="wrong" class="answer"><span>Answer 1B</span></input>
-					<input type="radio" name="q1" value="wrong" class="answer"><span>Answer 1C</span></input>
-					<input type="radio" name="q1" value="correct" class="answer"><span>Answer 1D</span></input>
-					<input type="radio" name="q1" value="wrong" class="answer"><span>Answer 1E</span></input>
+				<div class="question">Toe Jam and _______ <span class="systemYear">(Sega Genesis - 1991)</span></div>
+					<input type="radio" name="q1" value="wrong" class="answer"><span>Ram Jam</span></input>
+					<input type="radio" name="q1" value="wrong" class="answer"><span>Pearl</span></input>
+					<input type="radio" name="q1" value="wrong" class="answer"><span>Yo Ma'am</span></input>
+					<input type="radio" name="q1" value="correct" class="answer"><span>Earl</span></input>
+					<input type="radio" name="q1" value="wrong" class="answer"><span>Joe</span></input>
 				<span class="questionLineBreak"></span>
-				<div class="question">Question 2</div>
-					<input type="radio" name="q2" value="correct" class="answer"><span>Answer 2A</span></input>
-					<input type="radio" name="q2" value="wrong" class="answer"><span>Answer 2B</span></input>
-					<input type="radio" name="q2" value="wrong" class="answer"><span>Answer 2C</span></input>
-					<input type="radio" name="q2" value="wrong" class="answer"><span>Answer 2D</span></input>
-					<input type="radio" name="q2" value="wrong" class="answer"><span>Answer 2E</span></input>
+				<div class="question">Legend of Zelda: _______ of Time <span class="systemYear">(Nintendo 64 - 1998)</span></div>
+					<input type="radio" name="q2" value="correct" class="answer"><span>Ocarina</span></input>
+					<input type="radio" name="q2" value="wrong" class="answer"><span>Pan Flute</span></input>
+					<input type="radio" name="q2" value="wrong" class="answer"><span>Lute</span></input>
+					<input type="radio" name="q2" value="wrong" class="answer"><span>Mandolin</span></input>
+					<input type="radio" name="q2" value="wrong" class="answer"><span>Piccolo</span></input>
 				<span class="questionLineBreak"></span>
-				<div class="question">Question 3</div>
-					<input type="radio" name="q3" value="wrong" class="answer"><span>Answer 3A</span></input>
-					<input type="radio" name="q3" value="wrong" class="answer"><span>Answer 3B</span></input>
-					<input type="radio" name="q3" value="correct" class="answer"><span>Answer 3C</span></input>
-					<input type="radio" name="q3" value="wrong" class="answer"><span>Answer 3D</span></input>
-					<input type="radio" name="q3" value="wrong" class="answer"><span>Answer 3E</span></input>
+				<div class="question">Metal Gear _______ <span class="systemYear">(Playstation - 1998)</span></div>
+					<input type="radio" name="q3" value="wrong" class="answer"><span>Liquid</span></input>
+					<input type="radio" name="q3" value="wrong" class="answer"><span>Gas</span></input>
+					<input type="radio" name="q3" value="correct" class="answer"><span>Solid</span></input>
+					<input type="radio" name="q3" value="wrong" class="answer"><span>Revenge</span></input>
+					<input type="radio" name="q3" value="wrong" class="answer"><span>Rising</span></input>
 				<span class="questionLineBreak"></span>
-				<div class="question">Question 4</div>
-					<input type="radio" name="q4" value="wrong" class="answer"><span>Answer 4A</span></input>
-					<input type="radio" name="q4" value="correct" class="answer"><span>Answer 4B</span></input>
-					<input type="radio" name="q4" value="wrong" class="answer"><span>Answer 4C</span></input>
-					<input type="radio" name="q4" value="wrong" class="answer"><span>Answer 4D</span></input>
-					<input type="radio" name="q4" value="wrong" class="answer"><span>Answer 4E</span></input>
+				<div class="question">Grand Theft _______ <span class="systemYear">(Playstation - 1997)</span></div>
+					<input type="radio" name="q4" value="wrong" class="answer"><span>Heist</span></input>
+					<input type="radio" name="q4" value="correct" class="answer"><span>Auto</span></input>
+					<input type="radio" name="q4" value="wrong" class="answer"><span>Motorsport</span></input>
+					<input type="radio" name="q4" value="wrong" class="answer"><span>Turismo</span></input>
+					<input type="radio" name="q4" value="wrong" class="answer"><span>Throttle</span></input>
 				<span class="questionLineBreak"></span>
-				<div class="question">Question 5</div>
-					<input type="radio" name="q5" value="wrong" class="answer"><span>Answer 5A</span></input>
-					<input type="radio" name="q5" value="correct" class="answer"><span>Answer 5B</span></input>
-					<input type="radio" name="q5" value="wrong" class="answer"><span>Answer 5C</span></input>
-					<input type="radio" name="q5" value="wrong" class="answer"><span>Answer 5D</span></input>
-					<input type="radio" name="q5" value="wrong" class="answer"><span>Answer 5E</span></input>
+				<div class="question">The Elder Scrolls II: _______ <span class="systemYear">(PC - 1996)</span></div>
+					<input type="radio" name="q5" value="wrong" class="answer"><span>Hammerfall</span></input>
+					<input type="radio" name="q5" value="correct" class="answer"><span>Daggerfall</span></input>
+					<input type="radio" name="q5" value="wrong" class="answer"><span>Swordsman</span></input>
+					<input type="radio" name="q5" value="wrong" class="answer"><span>Assassins</span></input>
+					<input type="radio" name="q5" value="wrong" class="answer"><span>Arena</span></input>
 				<span class="questionLineBreak"></span>
-				<div class="question">Question 6</div>
-					<input type="radio" name="q6" value="wrong" class="answer"><span>Answer 6A</span></input>
-					<input type="radio" name="q6" value="wrong" class="answer"><span>Answer 6B</span></input>
-					<input type="radio" name="q6" value="wrong" class="answer"><span>Answer 6C</span></input>
-					<input type="radio" name="q6" value="correct" class="answer"><span>Answer 6D</span></input>
-					<input type="radio" name="q6" value="wrong" class="answer"><span>Answer 6E</span></input>
+				<div class="question">Mortal _______ <span class="systemYear">(Sega Genesis - 1992)</span></div>
+					<input type="radio" name="q6" value="wrong" class="answer"><span>Immortal</span></input>
+					<input type="radio" name="q6" value="wrong" class="answer"><span>Suffering</span></input>
+					<input type="radio" name="q6" value="wrong" class="answer"><span>Combat</span></input>
+					<input type="radio" name="q6" value="correct" class="answer"><span>Kombat</span></input>
+					<input type="radio" name="q6" value="wrong" class="answer"><span>Warriors</span></input>
 					<span class="questionLineBreak"></span>
 					<br>
-				<button class="submit btn btn-danger btn-lg" onclick="return resultsClick();"" type="submit">Finish</button>
+				<a class="submit btn btn-danger btn-lg" role="button" id="finishQuiz">Finish</a>
 			</form>
 		</div>
 		</div>
@@ -75,9 +75,9 @@
 		<div class="row">
 			<h1>Your Results</h1>
 			<div id="resultNumbers">
-				<div class="numCorrect"></div>
-				<div class="numWrong"></div>
-				<div class="numUnanswered"></div>
+				<div id="numCorrect"></div>
+				<div id="numWrong"></div>
+				<div id="numUnanswered"></div>
 			</div>
 		</div>
 	</div>
